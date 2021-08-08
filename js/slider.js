@@ -1,0 +1,37 @@
+$(document).ready(function(){
+    $('.shop__slider').slick({
+        arrows:true,
+        slidesToShow:4,
+        slidesToScroll:1,
+        speed:1000,
+        easing:'linear',
+        infinite:true,
+        autoplay:true,
+        autoplaySpeed:1500,
+        pauseOnFocus:true,
+        pauseOnDotsHover:true,
+        pauseOnHover:true,
+        draggable:true,
+        swipe:true,
+        touchThreshold:10,
+        touchMove:true,
+        responsive:[
+            {
+                breakpoint:1230,
+                settings:{
+                    slidesToShow:3,
+                }
+            },{
+                breakpoint:990,
+                settings:{
+                    slidesToShow:2,
+                }
+            },{
+                breakpoint:575,
+                settings:{
+                    slidesToShow:1,
+                }
+            },
+        ],
+    });
+});
